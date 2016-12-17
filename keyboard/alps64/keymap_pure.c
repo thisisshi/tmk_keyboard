@@ -7,14 +7,14 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [0] = KEYMAP_AEK( \
         ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, GRV, \
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
+        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSPC, \
         LCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN, QUOT,ENT, \
         LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH, RSFT, \
         LCTL,LALT,LGUI,          SPC,                          FN0,RALT, RCTL),
 
 
     [1] = KEYMAP_AEK( \
-        BSLS,  F1,   F2,   F3,   F4,    F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12, GRV, \
+        BSLS,  F1,   F2,   F3,   F4,    F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12, BSLS, \
 		//  TAB   Q      W    E     R      T     Y     U     I     O     P     [     ]      |
         TRNS, TRNS, TRNS, TRNS, TRNS,  TRNS, TRNS, TRNS, PSCR, SLCK , PAUS, UP, TRNS,  DEL, \
     //  LCTL  A     S      D    F      G      H    J      K     L     ;     '    ENTER
