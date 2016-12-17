@@ -6,7 +6,7 @@
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [0] = KEYMAP_AEK( \
-        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
+        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, GRV, \
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
         LCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN, QUOT,ENT, \
         LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH, RSFT, \
@@ -14,11 +14,14 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
     [1] = KEYMAP_AEK( \
-        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, \
-        TRNS ,TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  INS,UP,PSCR,VOLD,  VOLU,  MUTE, \
-        TRNS ,TRNS,TRNS,TRNS,TRNS,  TRNS,  TRNS,PGUP,LEFT,DOWN,RGHT,SLCK, TRNS, \
-        FN1,TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,PGDN,HOME, END,PAUS,RSFT, \
-        TRNS,TRNS,TRNS,          WWW_HOME,                         TRNS,TRNS,TRNS)
+        BSLS,  F1,   F2,   F3,   F4,    F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12, GRV, \
+		//  TAB   Q      W    E     R      T     Y     U     I     O     P     [     ]      |
+        TRNS, TRNS, TRNS, TRNS, TRNS,  TRNS, TRNS, TRNS, PSCR, SLCK , PAUS, UP, TRNS,  DEL, \
+    //  LCTL  A     S      D    F      G      H    J      K     L     ;     '    ENTER
+        TRNS, VOLD, VOLU, MUTE, TRNS,  TRNS, TRNS, TRNS, HOME, PGUP, LEFT, RGHT, TRNS, \
+	  //  LSFTT Z     X     C      V      B     N     M    ,     .      /     RSFT			
+        FN1,  TRNS, TRNS, TRNS, TRNS,  TRNS, TRNS, TRNS, END, PGDN,  DOWN, RSFT, \
+        TRNS,TRNS,TRNS,          SPC,                         TRNS,TRNS,TRNS)
 };
 
 
